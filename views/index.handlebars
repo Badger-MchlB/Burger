@@ -1,0 +1,21 @@
+<h1>Yummy Burgers to Eat</h1>
+
+<ul>
+    {{#each burgers}}
+    <li>
+        <p>
+            {{this.id}}. {{this.movie}}
+            <button data-burgerid="{{this.id}}" class="eatburger">Devour</button>
+        </p>
+    </li>
+    {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form id="addburger" class="button-size">
+    <textarea type="text" name="burger"></textarea>
+    <button type="submit">Add Burger</button>
+</form>
+
+<script type="text/javascript">
+</script>
